@@ -28,6 +28,9 @@ public:
     Dog& operator=(const Dog& other);
 
     void makeSound() const;
+
+private:
+    Brain* brain;
 };
 
 class Cat : public Animal
@@ -39,4 +42,7 @@ public:
     Cat& operator=(const Cat& other);
 
     void makeSound() const;
+
+private:
+    Brain* brain;
 };

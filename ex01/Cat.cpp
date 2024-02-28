@@ -3,6 +3,7 @@
 Cat::Cat() : Animal("Cat")
 {
     std::cout << "Cat constructor called" << std::endl;
+    Brain = new Brain();
 }
 
 Cat::~Cat()
@@ -13,6 +14,7 @@ Cat::~Cat()
 Cat::Cat(const Cat& other) : Animal(other)
 {
     std::cout << "Cat copy constructor called" << std::endl;
+    delete Brain;
 }
 
 Cat& Cat::operator=(const Cat& other)
