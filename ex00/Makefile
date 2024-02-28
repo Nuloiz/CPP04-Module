@@ -5,7 +5,7 @@ CC := c++
 CPPFLAGS := -Wall -Wextra -Werror -g3 -std=c++98
 #CPPFLAGS := -Wall -Wextra -Werror -g3 -std=c++98 -fsanitize=address
 
-SRC := main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+SRC := main.cpp Animal.cpp Dog.cpp Cat.cpp
 
 INCLUDES := -I
 
