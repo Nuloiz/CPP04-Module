@@ -2,6 +2,7 @@
 
 #include <string>
 #include <iostream>
+#include "Brain.hpp"
 
 class WrongAnimal
 {
@@ -28,4 +29,7 @@ public:
     WrongCat& operator=(const WrongCat& other);
 
     void makeSound() const;
+
+    private:
+    Brain *brain;
 };

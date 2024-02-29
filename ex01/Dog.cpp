@@ -3,13 +3,13 @@
 Dog::Dog() : Animal("Dog")
 {
     std::cout << "Dog constructor called" << std::endl;
-    Brain = new Brain();
+    this->brain = new Brain();
 }
 
 Dog::~Dog()
 {
     std::cout << "Dog destructor called" << std::endl;
-    delete Brain;
+    delete this->brain;
 }
 
 Dog::Dog(const Dog& other) : Animal(other)

@@ -18,6 +18,7 @@ int main()
     delete j;
     delete i;
 
+    std::cout  << "\n";
     const WrongAnimal* i2 = new WrongCat();
     std::cout << i2->getType() << " : ";
     i2->makeSound();

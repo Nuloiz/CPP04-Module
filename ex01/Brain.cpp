@@ -1,19 +1,32 @@
-#pragma once
+#include "Brain.hpp"
 
-#include <string>
-#include <iostream>
-
-class Brain
+Brain::Brain()
 {
-public:
-    Brain();
-    virtual ~Brain();
-    Brain(const Brain& other);
-    Brain& operator=(const Brain& other);
+    std::cout << "Brain constructor called" << std::endl;
+}
 
-    std::string getIdea(int index) const;
-    void setIdea(int index, const std::string& idea);
+Brain::~Brain()
+{
+    std::cout << "Brain destructor called" << std::endl;
+}
 
-protected:
-    std::string ideas[100];
-};
+Brain::Brain(const Brain& other)
+{
+    std::cout << "Brain copy constructor called" << std::endl;
+    *this = other;
+}
+
+Brain& Brain::operator=(const Brain& other)
+{
+    int i = 0;
+    std::cout << "Brain assignment operator called" << std::endl;
+    if (this != &other)
+    {
+        while (i < 100)
+        {
+            ideas[i] = other.ideas[i];
+            i++;
+        }
+    }
+    return *this;
+}
