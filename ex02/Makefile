@@ -2,7 +2,7 @@ NAME := polymorphism
 
 CC := c++
 
-CPPFLAGS := -Wall -Wextra -Werror -g3 -std=c++98
+CPPFLAGS := -Wall -Wextra -Werror -g3 -std=c++98 -Wshadow
 #CPPFLAGS := -Wall -Wextra -Werror -g3 -std=c++98 -fsanitize=address
 
 SRC := main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp Brain.cpp
