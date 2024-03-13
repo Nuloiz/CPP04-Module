@@ -10,7 +10,7 @@ WrongAnimal::~WrongAnimal()
     std::cout << "WrongAnimal destructor called" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(const std::string& type) : type(type)
+WrongAnimal::WrongAnimal(const std::string& t) : type(t)
 {
     std::cout << "WrongAnimal type constructor called" << std::endl;
 }

@@ -10,7 +10,7 @@ Animal::~Animal()
     std::cout << "Animal destructor called" << std::endl;
 }
 
-Animal::Animal(const std::string& type) : type(type)
+Animal::Animal(const std::string& t) : type(t)
 {
     std::cout << "Animal type constructor called" << std::endl;
 }

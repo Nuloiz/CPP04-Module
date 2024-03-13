@@ -8,7 +8,7 @@ class WrongAnimal
 {
 public:
     WrongAnimal();
-    WrongAnimal(const std::string& type);
+    WrongAnimal(const std::string& t);
     virtual ~WrongAnimal();
     WrongAnimal(const WrongAnimal& other);
     WrongAnimal& operator=(const WrongAnimal& other);
@@ -29,7 +29,4 @@ public:
     WrongCat& operator=(const WrongCat& other);
 
     void makeSound() const;
-
-    private:
-    Brain *brain;
 };

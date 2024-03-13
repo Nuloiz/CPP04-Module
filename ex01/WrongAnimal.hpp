@@ -29,7 +29,4 @@ public:
     WrongCat& operator=(const WrongCat& other);
 
     void makeSound() const;
-
-    private:
-    Brain *brain;
 };
